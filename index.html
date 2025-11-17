@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
+            background-image: url("background.jpg");
+            background-size: cover;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -18,6 +20,8 @@
         }
 
         nav ul {
+            display: flex;
+            justify-content: space-evenly;
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -29,7 +33,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -37,14 +41,15 @@
             max-width: 200px;
             height: auto;
             border-radius: 10%;
+            transition: transform 0.3s ease;
         }
 
         section {
-            padding: 20px;
+            padding: 10px;
         }
 
         section h2 {
-            color: #333;
+            color: #131313;
         }
 
         footer {
@@ -52,6 +57,53 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section:hover {
+            background-color: #00000022;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer:hover {
+            background-color: #f2f2f2;
+        }
+
+        header:hover {
+            background-color: #000000;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        section h2:hover {
+            color: #000000;
+        }
+
+        section#projects ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        section#projects ul li:hover {
+            background-color: #0047ba52;
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        section#contact p a:hover {
+            text-decoration: underline;
+            color: #9900ff;
+        }
+
+    section#projects ul li a:hover {
+            color: #9900ff;
         }
     </style>
 </head>
@@ -95,7 +147,7 @@
             <li>till grade 5 - RCSDPPS</li>
             <li>grade 6 - DJPS</li>
             <li>grade 7 to 12 - SBGS</li>
-                
+
         </ul>
         <ul>
             <p>SKILLS</p>
@@ -110,18 +162,20 @@
         <ul>
             <li>
                 <h3>Sudoku Master</h3>
-                <p>A python program that takes input from the user and generates the solution and also the method - how it filled each box and the logic behind it</p>
+                <p>A python program that takes input from the user and generates the solution and also the method - how
+                    it filled each box and the logic behind it</p>
             </li>
             <li>
                 <h3>Netflix Clone</h3>
                 <p>A web application that mimics the Netflix interface using HTML, CSS.</p>
+                <a href="/Netflix_clone/index.html">Check it out</a>
             </li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>Email: ka2537ya@proton.me </p>
+        <p>Email: <a href="mailto:ka2537ya@proton.me"> ka2537ya@proton.me</a> </p>
         <p>Linkedin: <a href="https://www.linkedin.com/in/kapil-yadav-83370a379?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Linkedin</a> </p>
         <p>Github: <a href="https://github.com/Kapilyadav2537"> Github</a> </p>
 
